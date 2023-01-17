@@ -1,3 +1,3 @@
-# Chuck Norris API Request in Rust
+# Norris
 
-Basically an example how to do async GET requests in Rust, using `reqwest`, `tokio` and `serde`.
+Simple async wrapper for the [Chuck Norris API](https://api.chucknorris.io/).
