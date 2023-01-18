@@ -1,6 +1,6 @@
 [package]
 name = "norris"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["graves501"]
 edition = "2021"
 description = "Simple async wrapper for the Chuck Norris Joke API: https://api.chucknorris.io/"
