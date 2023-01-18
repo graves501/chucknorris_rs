@@ -1,9 +1,9 @@
 [package]
 name = "norris"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["graves501"]
 edition = "2021"
-description = "Simple async wrapper for the Chuck Norris API: https://api.chucknorris.io/"
+description = "Simple async wrapper for the Chuck Norris Joke API: https://api.chucknorris.io/"
 license = "MIT"
 license_file = "LICENSE"
 repository = "https://github.com/graves501/chucknorris_rs"

@@ -63,7 +63,7 @@ pub async fn get_random_joke_by_category(category: JokeCategory) -> Result<Chuck
     Ok(response)
 }
 
-pub fn joke_category_to_string(joke_category: JokeCategory) -> String {
+fn joke_category_to_string(joke_category: JokeCategory) -> String {
     joke_category.to_string().to_lowercase()
 }
 
@@ -115,7 +115,6 @@ mod tests {
         let joke = response.value;
 
         assert!(!joke.is_empty());
-
         assert!(joke.contains("Chuck"));
         assert!(joke.contains("Norris"));
 
@@ -126,8 +125,8 @@ mod tests {
     async fn test_search_for_one_joke() -> Result<()> {
         let response = search_for_one_joke(String::from("moon")).await?;
         let joke = response.value;
-        assert!(!joke.is_empty());
 
+        assert!(!joke.is_empty());
         assert!(joke.contains("Chuck"));
         assert!(joke.contains("Norris"));
 
@@ -137,6 +136,7 @@ mod tests {
     #[tokio::test]
     async fn test_search_for_all_available_jokes() -> Result<()> {
         let response = search_for_all_available_jokes(String::from("texas")).await?;
+
         assert!(response.total > 0);
         assert!(response.result.len() > 0);
 
