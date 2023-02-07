@@ -1,5 +1,8 @@
 # Norris
 
+[![Crate Status](https://img.shields.io/crates/v/norris.svg)](https://crates.io/crates/norris)
+[![Docs Status](https://docs.rs/norris/badge.svg)](https://docs.rs/crate/norris/)
+
 Simple async wrapper for the [Chuck Norris Joke API](https://api.chucknorris.io/).
 
 ## Usage
